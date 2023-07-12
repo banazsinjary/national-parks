@@ -28,6 +28,7 @@ const ParkPage: React.FC = () => {
   return (
     <div>
       <h1>{park.name}</h1>
+      <h2>{park.state}</h2>
       <p>{park.description}</p>
     </div>
   );

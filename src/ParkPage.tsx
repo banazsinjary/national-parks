@@ -27,7 +27,7 @@ const ParkPage: React.FC = () => {
 
   return (
     <div>
-      <h1>{park.name},{park.state}</h1>
+      <h1>{park.name}</h1>
       <p>{park.description}</p>
     </div>
   );

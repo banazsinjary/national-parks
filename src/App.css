@@ -14,6 +14,7 @@ p{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: 250px;
     grid-gap: 0;
+    margin-left: 1%;
   }
   
   .park-square {
@@ -33,7 +34,7 @@ p{
   
   .park-card {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
   }
@@ -62,4 +63,19 @@ p{
     font-size: 18px;
     line-height: 1.5em;
     color: white;
+}
+
+.contact-section{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-top: 10%;
+}
+.contact-section h3{
+    margin: 0;
+    font-weight: 600;
+}
+
+.contact-section p{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
 }

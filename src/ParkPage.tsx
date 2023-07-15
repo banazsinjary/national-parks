@@ -41,6 +41,11 @@ const ParkPage: React.FC = () => {
       <div className='content-container'>
       <h1 id='name'>{park.name}</h1>
       <p id='description'>{park.description}</p>
+      <div className='contact-section'>
+          <h3>Contact</h3>
+          <p>Email: {park.contacts.emailAddresses[0].emailAddress}</p>
+          <p>Phone: {park.contacts.phoneNumbers[0].phoneNumber}</p>
+        </div>
       </div>
     </div>
   );

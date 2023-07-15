@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import './App.css'
 
 const Parks: React.FC = () => {
   const [parks, setParks] = useState([]);
@@ -32,6 +33,7 @@ const Parks: React.FC = () => {
           <Link to={`/park/${park.parkCode}`} key={park.parkCode}>
             <div className="park-card">
               <h2>{park.name}</h2>
+              <h2>{park.parkCode}</h2>
             </div>
           </Link>
         ))}

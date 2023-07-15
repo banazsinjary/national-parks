@@ -1,0 +1,18 @@
+/*App.tsx*/
+
+/*Parks.tsx*/
+
+/*ParkPage.tsx*/
+.park-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container{
+    text-align: center;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 4rem;
+}

@@ -33,7 +33,6 @@ const Parks: React.FC = () => {
           <Link to={`/park/${park.parkCode}`} key={park.parkCode}>
             <div className="park-card">
               <h2>{park.name}</h2>
-              <h2>{park.parkCode}</h2>
             </div>
           </Link>
         ))}

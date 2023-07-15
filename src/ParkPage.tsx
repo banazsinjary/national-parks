@@ -39,9 +39,8 @@ const ParkPage: React.FC = () => {
       backgroundRepeat: 'no-repeat',
       height: '100vh'}}>
       <div className='content-container'>
-      <h1>{park.name}</h1>
-      <h2>{park.state}</h2>
-      <p>{park.description}</p>
+      <h1 id='name'>{park.name}</h1>
+      <p id='description'>{park.description}</p>
       </div>
     </div>
   );

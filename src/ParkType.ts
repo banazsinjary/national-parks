@@ -3,4 +3,5 @@ interface Park {
     description: string;
     designation: string;
     state: string;
+    parkCode: string;
 }

@@ -27,17 +27,20 @@ const Parks: React.FC = () => {
 
   return (
     <div>
-      <h1>National Parks</h1>
-      <div className="park-grid"
-      >
-        {parks.map((park: any) => (
-            <Link to={`/park/${park.parkCode}`} key={park.parkCode}
-            className="park-square">
-              <div className="park-card">
-                {park.name}
-              </div>
+      <div className="park-grid">
+        {parks.map((park: any) => {
+            const imagePath = `/src/assets/national-park-pics/${park.parkCode}.jpeg`;
+          return (
+            <Link
+              to={`/park/${park.parkCode}`}
+              key={park.parkCode}
+              className="park-square"
+              style={{ backgroundImage: `url(${imagePath})` }}
+            >
+              <div className="park-card">{park.name}</div>
             </Link>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

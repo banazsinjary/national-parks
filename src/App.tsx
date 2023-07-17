@@ -3,15 +3,21 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Parks from './Parks';
 import ParkPage from './ParkPage';
 import './App.css'
+import Foot from './Footer';
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <Routes>
-      <Route path="/" Component={Parks}></Route>
-      <Route path="/park/:parkCode" Component={ParkPage}></Route>
-      </Routes>
-    </Router>
+    <>
+    <div id="container">
+      <Router>
+        <Routes>
+          <Route path="/" Component={Parks} />
+          <Route path="/park/:parkCode" Component={ParkPage} />
+        </Routes>
+      </Router>
+      </div>
+      <Foot />
+      </>
   );
 };
 

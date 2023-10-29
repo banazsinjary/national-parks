@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Parks from './Parks';
 import ParkPage from './ParkPage';
 import './App.css'
-import Foot from './Footer';
 
 const App: React.FC = () => {
   return (
@@ -16,7 +15,6 @@ const App: React.FC = () => {
         </Routes>
       </Router>
       </div>
-      <Foot />
       </>
   );
 };

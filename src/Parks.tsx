@@ -29,7 +29,7 @@ const Parks: React.FC = () => {
     <div>
       <div className="park-grid">
         {parks.map((park: any) => {
-            const imagePath = `/src/assets/national-park-pics/${park.parkCode}.jpeg`;
+            const imagePath = `/national-park-pics/${park.parkCode}.jpeg`;
           return (
             <Link
               to={`/park/${park.parkCode}`}

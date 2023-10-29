@@ -15,7 +15,7 @@ const ParkPage: React.FC = () => {
           `https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key=hm7AFz709emgcq69d0bRkSYxJ34mWehxJ2ewiMkN`
         );
         setPark(response.data.data[0]);
-        const image = await import(`./assets/national-park-pics/${parkCode}.jpeg`);
+        const image = await import(`/national-park-pics/${parkCode}.jpeg`);
         setBackgroundImage(image.default)
 
       } catch (error) {

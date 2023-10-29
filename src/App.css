@@ -6,10 +6,6 @@ h1{
 p{
     font-family: 'Lato', sans-serif;
 }
-#container{
-    margin-bottom: 25%;
-}
-
 
 /*Parks.tsx*/
 
@@ -33,8 +29,7 @@ p{
   border-radius: 8px;
   background-size: cover;
   background-position: center;
-    border: 1px solid black;
-   
+  border: 1px solid black;
   }
   
   .park-card {
@@ -53,6 +48,8 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 50%;
+  background-attachment: fixed;
 }
 
 .content-container{
@@ -87,14 +84,3 @@ p{
     font-family: 'Lato', sans-serif;
     font-size: 15px;
 }
-
-/* Footer.tsx */
-#foot{
-    bottom: -20px;
-}
-#feet{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
